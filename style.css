@@ -43,15 +43,15 @@ body{
     color: black;
     background-color: white;
     font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
+    padding: 0.5rem 0.6rem;
+    margin-left: 0.4rem;
     margin-top: 1rem;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
 }
 
 .btn:hover{
-    transform: scale(0.8);
+    transform: scale(0.9);
     background-color: black;
     color: white;
 }
@@ -197,11 +197,40 @@ body{
     left: 35%;
 }
 
+.copy, .copytxt{
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.6rem;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.copy, .copytxt:hover{
+    transform: scale(0.9);
+    background-color: black;
+    color: white;
+}
+
+.div{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: end;
+    height: 10%;
+}
+
 /* ############## MEDIA QUERIES #################### */
 @media (max-width:500px) {
     *{
         font-size: 56%;
         overflow: hidden;
+    }
+
+    .btn{
+        width: 15rem;
+        text-align: center;
     }
 
     .box{
@@ -270,7 +299,7 @@ body{
     
     #encryption .preview{
         font-size: 2.5rem;
-        height: 10.5rem;
+        height: 7.5rem;
     }
     
     /* ################# BOX3 ###################### */
@@ -312,7 +341,7 @@ body{
     
     #decryption .result2 .txtpre{
         font-size: 2.5rem;
-        height: 10.5rem;
+        height: 7.5rem;
     }
 
     #decryption .result2{

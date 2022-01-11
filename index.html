@@ -31,7 +31,10 @@
         <div class="result">
             <p class="crypto">Crypto Code of the paragraph that you entered above is:</p>
             <p class="preview"></p>
-            <button class="btn btn2" onclick="decry()">Decryption</button>
+            <div class="div">
+                <button class="btn btn2" onclick="decry()">Decryption</button>
+                <button class="copy" onclick="copy()">Copy</button>
+            </div>
         </div>
     </div>
     <div class="box3" id="decryption" style="display: none;">
@@ -45,7 +48,10 @@
         <div class="result2">
             <p class="precode">Crypto Code of the paragraph that you entered above is:</p>
             <p class="txtpre"></p>
-            <button class="btn btn2" onclick="encry()">Encryption</button>
+            <div class="div">
+                <button class="btn btn2" onclick="encry()">Encryption</button>
+                <button class="copytxt" onclick="copytxt()">Copy</button>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>

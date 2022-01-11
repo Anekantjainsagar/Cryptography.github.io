@@ -2,7 +2,6 @@ function submit() {
   const preview = document.querySelector(".preview");
   const value = document.querySelector("input").value;
   const box2 = document.querySelector(".box2")
-  console.log(box2)
 
   let newStr = value.toUpperCase();
 
@@ -86,10 +85,9 @@ function submit() {
     case str25.includes("Z"):
       let str26 = str25.replaceAll("Z", "|");
 
-    case str26.includes("  "):
-      let str27 = str26.replaceAll("  ", ";");
+    case str26.includes(" "):
+      let str27 = str26.replaceAll(" ", ";");
 
-      console.log(str27);
       preview.innerText = str27;
       break;
     default:
@@ -204,4 +202,19 @@ function decry(){
   const decryption = document.querySelector("#decryption")
   encryption.style.display = "none"
   decryption.style.display = "block"
+}
+
+
+function copy() {
+  const copy = document.querySelector(".copy")
+  const preview = document.querySelector(".preview").innerHTML
+  console.log(preview)
+  navigator.clipboard.writeText(preview);
+}
+
+function copytxt() {
+  const copy = document.querySelector(".copytxt")
+  const txtpre = document.querySelector(".txtpre").innerHTML
+  console.log(txtpre)
+  navigator.clipboard.writeText(txtpre);
 }
